@@ -133,14 +133,14 @@ const clearQueue = () => {
         
         <div>
           <h3 class="text-lg font-medium text-gray-900">
-            {{ isDragging ? 'Drop files here' : 'Drag and drop your images' }}
+            {{ isDragging ? '将文件拖放到此处' : '拖放您的图片' }}
           </h3>
-          <p class="mt-1 text-sm text-gray-500">Or select files from your computer</p>
+          <p class="mt-1 text-sm text-gray-500">或者从计算机中选择图片</p>
         </div>
         
         <div>
           <label class="btn btn-primary cursor-pointer">
-            Browse Files
+            浏览文件
             <input 
               type="file" 
               multiple 

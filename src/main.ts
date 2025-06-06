@@ -2,7 +2,6 @@ import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import { createPinia } from 'pinia'
 import { VueToastPlugin } from 'vue-toast-notification'
-import VueMasonry from 'vue-masonry-css'
 import 'vue-toast-notification/dist/theme-sugar.css'
 
 import App from './App.vue'
@@ -26,6 +25,5 @@ const app = createApp(App)
 app.use(router)
 app.use(pinia)
 app.use(VueToastPlugin)
-app.use(VueMasonry)
 
 app.mount('#app')
