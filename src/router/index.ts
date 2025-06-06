@@ -47,7 +47,7 @@ export const routes: RouteRecordRaw[] = [
 
 // Navigation guard
 export function setupRouterGuards(router: any) {
-  router.beforeEach((to: any, from: any, next: any) => {
+  router.beforeEach((to: any, _from: any, next: any) => {
     const authStore = useAuthStore()
     
     if (to.meta.requiresAuth && !authStore.isAuthenticated) {

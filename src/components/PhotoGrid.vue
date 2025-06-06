@@ -175,7 +175,7 @@ const calcItemHeight = (item: any, itemWidth: number): number => {
         :calc-item-height="calcItemHeight"
         row-key="id"
       >
-        <template #default="{ item, index }">
+        <template #default="{ item }">
           <div class="transform transition-all duration-300 hover:scale-[1.02] hover:z-10">
             <PhotoItem 
               :key="item.id"

@@ -2,7 +2,7 @@
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
 import { Photo } from '../types'
-import { formatFileSize, formatDate } from '../utils/formatters'
+import { formatFileSize } from '../utils/formatters'
 import { usePhotoStore } from '../stores/photos'
 
 const props = defineProps<{
