@@ -27,5 +27,8 @@ dist-ssr
 # Local Netlify folder
 .netlify
 
+# private files
+.env
+
 # TypeScript build info files
 *.tsbuildinfo
