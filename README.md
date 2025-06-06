@@ -51,9 +51,15 @@ cp .env.example .env
 ```
 编辑 `.env` 文件，填入必要的配置信息：
 ```env
-VITE_API_URL=your_api_url
-VITE_CLOUDINARY_CLOUD_NAME=your_cloud_name
-VITE_CLOUDINARY_UPLOAD_PRESET=your_upload_preset
+# Backblaze B2 credentials (用你实际的值代替)
+B2_APPLICATION_KEY_ID=your_backblaze_b2_application_key_id
+B2_APPLICATION_KEY=your_backblaze_b2_application_key
+B2_BUCKET_ID=your_backblaze_b2_bucket_id
+B2_BUCKET_NAME=your_backblaze_b2_bucket_name
+
+# Authentication (用你实际的值代替)
+JWT_SECRET=your_secure_jwt_secret_key
+APP_PASSWORD=your_secure_app_password
 ```
 
 4. 启动开发服务器
